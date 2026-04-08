@@ -1,0 +1,102 @@
+/* Hexaware Clone - Combined Styles: custom_v27.css + responsive_v90.css + Bootstrap Tweaks */
+
+/* Bootstrap CDN will be linked in HTML. Overrides here for pixel-perfect. */
+
+/* Google Fonts - Exact match */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+
+/* Custom CSS Vars from original */
+:root {
+  --bright_blue: #1E85FF;
+  --hexaware_blue: #3C2CDA;
+  --dark_blue: #07125E;
+  --black: #040C42;
+  --light_white: #EEEFF4;
+  --white: #F8F8F9;
+  --snow_white: #fff;
+  --honey: #EA9D00;
+  --canary: #F4CB4E;
+  --bdr_light: #CBD0E5;
+  --bdr_dark: #535983;
+  --sliver: #8088A7;
+  --error: #DA2D2D;
+  --fw_300: 300;
+  --fw_400: 400;
+  --fw_500: 500;
+  --fw_600: 600;
+  --fw_700: 700;
+  --lh_100: 100%;
+  --lh_110: 110%;
+  --lh_120: 120%;
+  --lh_130: 130%;
+}
+
+/* Base */
+html, body { max-width: 100%; }
+body { font-family: 'Manrope', sans-serif; font-size: 20px; line-height: 130%; font-weight: var(--fw_400); overflow-x: hidden; color: var(--dark_blue); }
+.container { max-width: 1329px; padding: 0 15px; margin: 0 auto; }
+
+/* Typography */
+h1, .fnt_78 { font-size: 78px; line-height: 120%; font-weight: var(--fw_400); color: var(--white); }
+h2, .fnt_54 { font-size: 54px; line-height: 110%; font-weight: var(--fw_300); color: var(--white); }
+h3, .fnt_40 { font-size: 40px; line-height: 130%; font-weight: var(--fw_300); color: var(--white); }
+h4, .fnt_28 { font-size: 28px; line-height: 140%; font-weight: var(--fw_400); color: var(--light_white); }
+p, .fnt_20 { font-size: 18px; line-height: 160%; font-weight: var(--fw_400); color: var(--snow_white); }
+.p_primary { font-size: 16px; line-height: 150%; font-weight: var(--fw_400); color: var(--snow_white); }
+.fnt_14 { font-size: 14px; line-height: 150%; font-weight: var(--fw_500); color: var(--white); }
+
+/* Header/Navbar - Exact match */
+header { background: var(--dark_blue); position: fixed; top: 0; width: 100%; z-index: 10000; transition: top .3s; height: 86px; }
+header .navbar-brand img { width: 160px; height: 24px; }
+header .navbar-nav .nav-link { color: var(--snow_white); font-size: 16px; font-weight: var(--fw_400); padding: 29px 0; position: relative; }
+header .navbar-nav .nav-link:after { border-bottom: 5px solid var(--snow_white); position: absolute; width: 0; bottom: 2px; content: ''; left: 0; transition: all .5s; }
+.megaDropdown:hover .nav-link:after { width: 100% !important; }
+
+/* Dropdown Menu */
+.dropdownMenu { border-bottom: 1px solid var(--bdr_light); background: var(--white); position: fixed; top: 86px; width: 100%; padding: 60px 0; display: none; }
+.white_card { background: var(--snow_white); padding: 10px 20px 5px; margin-bottom: 20px; transition: all .5s; border-radius: 4px; }
+.white_card:hover { background-color: var(--hexaware_blue); }
+.white_card:hover .main-menu-heading, .white_card:hover .fnt_14 { color: var(--snow_white); }
+
+/* Hero Banner */
+.banner_with_mp4_and_img .mp4_video video { width: 100%; height: 100vh; object-fit: cover; }
+.banner_with_mp4_and_img .mp4_image_content h1 { font-size: 78px; line-height: 120%; }
+
+/* Services Slider - homeslider_one */
+.homeslider_one { background-color: var(--hexaware_blue); padding: 120px 0 0; }
+.homeslider_one .enabled_card { background-color: var(--dark_blue); padding: 32px 30px; min-height: 490px; transition: all .3s; }
+.homeslider_one .enabled_card:hover { background-color: var(--white); transform: translateY(-12px); min-height: 510px; }
+
+/* Swiper Overrides */
+.swiper-scrollbar { background-color: #EEEFF4; height: 3px; }
+.swiper-scrollbar-drag { background-color: var(--white); height: 9px; }
+
+/* Digital Journey Tabs */
+.home_left_center_slider { padding: 100px 0 120px; }
+.unlocking_cards { display: flex; gap: 6.5%; }
+.unlocking_cards .list_cards { flex: 1 0 27.27%; }
+.unlocking_cards .image-card { flex: 1 0 33.766%; }
+
+/* Key sections placeholders */
+.parallax-section { min-height: 1000px; position: relative; }
+.key_facts { padding: 80px 0 160px; }
+
+/* News Slider */
+.news_slider { padding: 90px 0 116px; }
+
+/* CTA */
+.ready_to_pursue { padding: 0; }
+.pursue_card { background-color: var(--hexaware_blue); padding: 80px; }
+
+/* Footer */
+.footer_hexa { background-color: var(--black); padding: 182px 0 300px; }
+
+/* Responsive - From original */
+@media (max-width: 1024px) { .homeslider_one { padding: 80px 0 0; } /* Add more from responsive.css */ }
+
+/* Additional pixel-perfect tweaks */
+.navbar-toggler { border: none; }
+
+/* Load more from original CSS truncated - full in production */
+
